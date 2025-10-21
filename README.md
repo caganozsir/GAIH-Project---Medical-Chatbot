@@ -1,6 +1,6 @@
 # 🏥 Medipol RAG Chatbot
 
-A **Retrieval-Augmented Generation (RAG)** chatbot built with **Google Gemini**, **FAISS**, and **Gradio** — fine-tuned for answering medical questions using verified articles from **İstanbul Medipol University’s health blog**.
+A **Retrieval-Augmented Generation (RAG)** chatbot built with **Google Gemini**, **FAISS**, and **Gradio** — fine-tuned for answering medical questions using a dataset consisting verified articles from **İstanbul Medipol University’s health blog**.
 
 This project allows users to ask natural-language questions about health topics, and the system retrieves the most relevant passages from Medipol’s medical articles before generating a comprehensive answer with citations.
 
