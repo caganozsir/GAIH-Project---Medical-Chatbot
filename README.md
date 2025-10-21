@@ -104,39 +104,42 @@ Chatbot Answer:
 
 Bel fıtığı tedavisinde hem cerrahi hem de cerrahi olmayan çeşitli yöntemler mevcuttur. Tedavi yaklaşımı genellikle fıtığın şiddetine, hastanın semptomlarına ve genel sağlık durumuna göre belirlenir.
 
-    Cerrahi Olmayan Tedavi Yöntemleri: Bel fıtığı vakalarının büyük bir kısmı cerrahi olmayan yöntemlerle tedavi edilebilir. Bu yöntemler genellikle semptomları hafifletmeyi, ağrıyı azaltmayı ve hastanın fonksiyonel yeteneklerini geri kazandırmayı hedefler.
+**Cerrahi Olmayan Tedavi Yöntemleri:**
+Bel fıtığı vakalarının büyük bir kısmı cerrahi olmayan yöntemlerle tedavi edilebilir. Bu yöntemler genellikle semptomları hafifletmeyi, ağrıyı azaltmayı ve hastanın fonksiyonel yeteneklerini geri kazandırmayı hedefler.
 
-        İlaç Tedavisi: Ağrıyı ve inflamasyonu kontrol altına almak için çeşitli ilaçlar kullanılabilir. Bunlar arasında ağrı kesiciler (parasetamol, ibuprofen, naproksen gibi), kas gevşeticiler, non-steroidal antiinflamatuar ilaçlar (NSAID'ler) ve bazı durumlarda opioidler yer alır. Ayrıca sinir ağrısını azaltmaya yardımcı olan antidepresanlar ve antikonvülsanlar da reçete edilebilir. (Lütfen bu ilaçların sadece doktor tavsiyesiyle kullanılması gerektiğini unutmayın.)
+* **İlaç Tedavisi:** Ağrıyı ve inflamasyonu kontrol altına almak için çeşitli ilaçlar kullanılabilir. Bunlar arasında ağrı kesiciler (parasetamol, ibuprofen, naproksen gibi), kas gevşeticiler, non-steroidal antiinflamatuar ilaçlar (NSAID'ler) ve bazı durumlarda opioidler yer alır. Ayrıca sinir ağrısını azaltmaya yardımcı olan antidepresanlar ve antikonvülsanlar da reçete edilebilir. *(Lütfen bu ilaçların sadece doktor tavsiyesiyle kullanılması gerektiğini unutmayın.)*
 
-        Fizik Tedavi: Fizyoterapistler, hastaların duruşunu düzeltmek, kasları güçlendirmek, esnekliği artırmak ve ağrıyı azaltmak için çeşitli egzersizler ve teknikler uygularlar. Fizik tedavi programları genellikle kişiye özel olarak tasarlanır ve bel bölgesini destekleyen kasları güçlendirmeye, doğru vücut mekaniklerini öğretmeye ve ağrıyı yönetme stratejileri sunmaya odaklanır.
+* **Fizik Tedavi:** Fizyoterapistler, hastaların duruşunu düzeltmek, kasları güçlendirmek, esnekliği artırmak ve ağrıyı azaltmak için çeşitli egzersizler ve teknikler uygularlar. Fizik tedavi programları genellikle kişiye özel olarak tasarlanır ve bel bölgesini destekleyen kasları güçlendirmeye, doğru vücut mekaniklerini öğretmeye ve ağrıyı yönetme stratejileri sunmaya odaklanır.
 
-        Egzersiz: Düzenli egzersiz, bel fıtığı semptomlarını hafifletmeye ve nüks riskini azaltmaya yardımcı olabilir. Egzersizler arasında yürüyüş, yüzme, bisiklet sürme gibi düşük etkili aktiviteler, germe egzersizleri ve karın ve sırt kaslarını güçlendiren egzersizler yer alır.
+* **Egzersiz:** Düzenli egzersiz, bel fıtığı semptomlarını hafifletmeye ve nüks riskini azaltmaya yardımcı olabilir. Egzersizler arasında yürüyüş, yüzme, bisiklet sürme gibi düşük etkili aktiviteler, germe egzersizleri ve karın ve sırt kaslarını güçlendiren egzersizler yer alır.
 
-        Manuel Terapi: Manuel terapi, omurga ve çevresindeki yumuşak dokuların manipülasyonunu içerir. Bu teknikler, eklem hareketliliğini artırmaya, kas gerginliğini azaltmaya ve ağrıyı hafifletmeye yardımcı olabilir.
+* **Manuel Terapi:** Manuel terapi, omurga ve çevresindeki yumuşak dokuların manipülasyonunu içerir. Bu teknikler, eklem hareketliliğini artırmaya, kas gerginliğini azaltmaya ve ağrıyı hafifletmeye yardımcı olabilir.
 
-        Enjeksiyonlar: Bazı durumlarda, doktorlar kortikosteroid enjeksiyonları yaparak iltihabı azaltabilir ve ağrıyı hafifletebilirler. Bu enjeksiyonlar genellikle omurga çevresindeki epidural boşluğa veya sinir köklerinin yakınına yapılır.
+* **Enjeksiyonlar:** Bazı durumlarda, doktorlar kortikosteroid enjeksiyonları yaparak iltihabı azaltabilir ve ağrıyı hafifletebilirler. Bu enjeksiyonlar genellikle omurga çevresindeki epidural boşluğa veya sinir köklerinin yakınına yapılır.
 
-        Ağrı Yönetimi: Kronik bel fıtığı ağrısı olan hastalar için ağrı yönetimi programları faydalı olabilir. Bu programlar, ilaç tedavisi, fizik tedavi, psikolojik danışmanlık ve alternatif tedavi yöntemlerini içerebilir.
+* **Ağrı Yönetimi:** Kronik bel fıtığı ağrısı olan hastalar için ağrı yönetimi programları faydalı olabilir. Bu programlar, ilaç tedavisi, fizik tedavi, psikolojik danışmanlık ve alternatif tedavi yöntemlerini içerebilir.
 
-        Destekleyici Cihazlar: Bazı hastalar için bel korsesi veya diğer destekleyici cihazlar kullanmak, bel bölgesini destekleyerek ağrıyı azaltmaya yardımcı olabilir.
+* **Destekleyici Cihazlar:** Bazı hastalar için bel korsesi veya diğer destekleyici cihazlar kullanmak, bel bölgesini destekleyerek ağrıyı azaltmaya yardımcı olabilir.
 
-    Cerrahi Tedavi Yöntemleri: Cerrahi tedavi genellikle cerrahi olmayan yöntemlerin başarısız olduğu, semptomların şiddetli olduğu veya sinir hasarının ilerlediği durumlarda düşünülür.
+**Cerrahi Tedavi Yöntemleri:**
+Cerrahi tedavi genellikle cerrahi olmayan yöntemlerin başarısız olduğu, semptomların şiddetli olduğu veya sinir hasarının ilerlediği durumlarda düşünülür.
 
-        Diskektomi: En sık yapılan cerrahi yöntemlerden biridir. Bu işlemde, fıtıklaşmış diskin sinirlere baskı yapan kısmı çıkarılır. Diskektomi genellikle minimal invaziv tekniklerle yapılabilir.
+* **Diskektomi:** En sık yapılan cerrahi yöntemlerden biridir. Bu işlemde, fıtıklaşmış diskin sinirlere baskı yapan kısmı çıkarılır. Diskektomi genellikle minimal invaziv tekniklerle yapılabilir.
 
-        Laminotomi/Laminektomi: Bu işlemlerde, omurilik kanalını daraltan lamina adı verilen kemik yapılarının bir kısmı veya tamamı çıkarılır. Bu, sinirlere daha fazla alan açarak baskıyı azaltmaya yardımcı olur.
+* **Laminotomi / Laminektomi:** Bu işlemlerde, omurilik kanalını daraltan lamina adı verilen kemik yapılarının bir kısmı veya tamamı çıkarılır. Bu, sinirlere daha fazla alan açarak baskıyı azaltmaya yardımcı olur.
 
-        Spinal Füzyon: Omurların birbirine kaynaştırılması işlemidir. Genellikle diskektomi veya laminektomi ile birlikte uygulanır ve omurgayı stabilize etmeye yardımcı olur.
+* **Spinal Füzyon:** Omurların birbirine kaynaştırılması işlemidir. Genellikle diskektomi veya laminektomi ile birlikte uygulanır ve omurgayı stabilize etmeye yardımcı olur.
 
-        Disk Protezi: Hasarlı diskin yerine yapay bir disk yerleştirilir. Bu, omurganın hareketliliğini korumaya yardımcı olabilir.
+* **Disk Protezi:** Hasarlı diskin yerine yapay bir disk yerleştirilir. Bu, omurganın hareketliliğini korumaya yardımcı olabilir.
 
-Önemli Not: Bel fıtığı tedavisi kişiye özel olmalıdır ve bir uzman hekim tarafından belirlenmelidir. Bu bilgiler sadece genel bilgilendirme amaçlıdır ve tıbbi tavsiye olarak değerlendirilmemelidir. Herhangi bir sağlık sorununuz varsa, lütfen doktorunuza danışın.
+**Önemli Not:**
+Bel fıtığı tedavisi kişiye özel olmalıdır ve bir uzman hekim tarafından belirlenmelidir. Bu bilgiler sadece genel bilgilendirme amaçlıdır ve tıbbi tavsiye olarak değerlendirilmemelidir. Herhangi bir sağlık sorununuz varsa, lütfen doktorunuza danışın.
 
-Kaynaklar:
+**Kaynaklar:**
 
-    Bel Ağrısı — https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/bel-agrisi
-    Bel Fıtığı Nedir? Tedavi Yöntemleri Nelerdir? — https://medipol.com.tr/bilgi-kosesi/bunlari-biliyor-musunuz/bel-fitigi
-    Ameliyatsız Bel Fıtığı Tedavi Yöntemleri ve Etkili Çözümler — https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/ameliyatsiz-bel-fitigi-tedavi-yontemleri-ve-etkili-cozumler
+* [Bel Ağrısı](https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/bel-agrisi)
+* [Bel Fıtığı Nedir? Tedavi Yöntemleri Nelerdir?](https://medipol.com.tr/bilgi-kosesi/bunlari-biliyor-musunuz/bel-fitigi)
+* [Ameliyatsız Bel Fıtığı Tedavi Yöntemleri ve Etkili Çözümler](https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/ameliyatsiz-bel-fitigi-tedavi-yontemleri-ve-etkili-cozumler)
 
 
 ## 🧩 Acknowledgments
