@@ -137,9 +137,9 @@ Bel fıtığı tedavisi kişiye özel olmalıdır ve bir uzman hekim tarafından
 
 **Kaynaklar:**
 
-* [Bel Ağrısı](https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/bel-agrisi)
-* [Bel Fıtığı Nedir? Tedavi Yöntemleri Nelerdir?](https://medipol.com.tr/bilgi-kosesi/bunlari-biliyor-musunuz/bel-fitigi)
-* [Ameliyatsız Bel Fıtığı Tedavi Yöntemleri ve Etkili Çözümler](https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/ameliyatsiz-bel-fitigi-tedavi-yontemleri-ve-etkili-cozumler)
+* [Bel Ağrısı] — https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/bel-agrisi
+* [Bel Fıtığı Nedir? Tedavi Yöntemleri Nelerdir?] — https://medipol.com.tr/bilgi-kosesi/bunlari-biliyor-musunuz/bel-fitigi
+* [Ameliyatsız Bel Fıtığı Tedavi Yöntemleri ve Etkili Çözümler] — https://medipol.com.tr/bilgi-kosesi/adan-zye-saglik/ameliyatsiz-bel-fitigi-tedavi-yontemleri-ve-etkili-cozumler
 
 
 ## 🧩 Acknowledgments
