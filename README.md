@@ -1,3 +1,9 @@
+---
+title: gaih-bootcamp-medical-chatbot
+app_file: app_from_artifacts.py
+sdk: gradio
+sdk_version: 5.49.1
+---
 # Akbank GenAI RAG (Artifacts-Only)
 
 **Veri seti indirmeden** çalışan Türkçe RAG uygulaması. Hazır **FAISS index** (`medipol_faiss.index`) ve **metadata** (`medipol_metadata.pkl`) ile sorgu anında benzer pasajları bulur ve **Gemini** ile yanıt üretir.

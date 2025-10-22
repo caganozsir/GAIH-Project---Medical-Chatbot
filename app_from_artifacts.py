@@ -73,6 +73,7 @@ def encode_query(q: str) -> np.ndarray:
     q_emb = embedder.encode([q], normalize_embeddings=True)
     return np.asarray(q_emb, dtype=np.float32)
 
+# sanity check: embedding dim must match index dim
 _tmp = encode_query("test")
 if _tmp.shape[1] != index.d:
     raise ValueError(f"Dim mismatch: query dim={_tmp.shape[1]} vs index.d={index.d}")
@@ -97,12 +98,12 @@ def build_prompt(question: str, contexts):
     ctx_block = "\n\n".join([f"Passaj {i+1}:\n{c['content']}" for i, c in enumerate(contexts)])
     src_block = "\n".join([f"- {c['title']} — {c['url']}" if c["url"] else f"- {c['title']}" for c in contexts])
     return f"""
-"Aşağıdaki içerik parçalarına dayanarak soruyu yanıtla.\n"
-"Tıbbi sorular dışında bir soru gelirse 'Benim alanım değil ama' dedikten sonra bildiğin kadarıyla cevap ver.\n"
-"**Kısa değil, kapsamlı** bir yanıt ver: önce 1–2 cümlelik özet, ardından **madde işaretleri** ile detaylar.\n"
-"Yetersiz bilgi varsa 'Bilmiyorum' veya 'Belgelerde yeterli bilgi yok' de.\n"
-"Tıbbi tavsiye verme; genel bilgilendirme yap ve uzman görüşüne yönlendir.\n"
-"Cevabın sonunda 'Kaynaklar:' altında başlık ve URL ver.\n\n"
+Aşağıdaki içerik parçalarına dayanarak soruyu yanıtla.
+Tıbbi sorular dışında bir soru gelirse "Benim alanım değil ama" dedikten sonra bildiğin kadarıyla cevap ver.
+**Kısa değil, kapsamlı** bir yanıt ver: önce 1–2 cümlelik özet, ardından **madde işaretleri** ile detaylar.
+Yetersiz bilgi varsa "Bilmiyorum" veya "Belgelerde yeterli bilgi yok" de.
+Tıbbi tavsiye verme; genel bilgilendirme yap ve uzman görüşüne yönlendir.
+Cevabın sonunda "Kaynaklar:" altında başlık ve URL ver.
 
 Soru:
 {question}
@@ -120,18 +121,38 @@ def generate_answer(question: str):
     prompt = build_prompt(question, ctxs)
     model = genai.GenerativeModel(CFG["gemini_model"])
     resp = model.generate_content(prompt)
-    text= resp.text or ""
+    text = resp.text or ""
     return text, ctxs
+
+WELCOME_HTML = """<div class='welcome-msg'>
+👋 Merhaba!<br><br>
+Ben <b>Medipol Chatbot</b>.<br>
+Tıbbi makalelerden derlenmiş bilgilerle sorularınıza yanıt veririm.<br><br>
+<i>Örnek sorular:</i><br>
+• Bel fıtığı tedavi yöntemleri nelerdir?<br>
+• Kütletme sağlıklı mıdır?<br>
+• Migren atağı için kanıta dayalı yaklaşımlar neler?<br>
+</div>"""
 
 def chat_fn(message, history):
     try:
         answer, _ctxs = generate_answer(message)
-        history = history + [[message, answer]]
+        # history is a list of {"role": "...", "content": "..."} dicts with type="messages"
+        history = history + [
+            {"role": "user", "content": message},
+            {"role": "assistant", "content": answer},
+        ]
         return history, gr.update(value="")
     except Exception as e:
         err = f"⚠️ Hata: {e}"
-        history = history + [[message, err]]
+        history = history + [
+            {"role": "user", "content": message},
+            {"role": "assistant", "content": err},
+        ]
         return history, gr.update(value="")
+
+def clear_chat():
+    return [{"role": "assistant", "content": WELCOME_HTML}]
 
 with gr.Blocks(
     title="Medipol RAG Chatbot",
@@ -147,20 +168,12 @@ with gr.Blocks(
     }
     .app-header h1 { font-size:1.4rem; margin:0; color:white; }
     .app-subtle { color:rgba(255,255,255,0.92); font-size:0.95rem; margin:3px 0 0 0; }
-
-    /* center the initial welcome message */
-    .welcome-msg {
-        text-align:center;
-        line-height:1.6;
-    }
-    .welcome-msg b {
-        color:#1e88ff;
-    }
+    .welcome-msg { text-align:center; line-height:1.6; }
+    .welcome-msg b { color:#1e88ff; }
     """
 ) as demo:
     # Header
-    gr.HTML(
-        """
+    gr.HTML("""
         <div class="app-header">
             <div style="font-size:1.8rem">🏥</div>
             <div>
@@ -168,29 +181,16 @@ with gr.Blocks(
                 <div class="app-subtle">Bilgilendirme amaçlıdır; tıbbi tavsiye değildir.</div>
             </div>
         </div>
-        """
-    )
+    """)
 
-    # Centered initial message
+    # Chatbot (messages API)
     chat = gr.Chatbot(
         label="Sohbet",
         height=480,
-        bubble_full_width=False,
-        value=[
-            (
-                None,
-                """<div class='welcome-msg'>
-                👋 Merhaba!<br><br>
-                Ben <b>Medipol Chatbot</b>.<br>
-                Tıbbi makalelerden derlenmiş bilgilerle sorularınıza yanıt veririm.<br><br>
-                <i>Örnek sorular:</i><br>
-                • Bel fıtığı tedavi yöntemleri nelerdir?<br>
-                • Kütletme sağlıklı mıdır??<br>
-                • Migren atağı için kanıta dayalı yaklaşımlar neler?<br>
-                </div>"""
-            )
-        ],
-        sanitize_html=False  # allow HTML for centering
+        type="messages",
+        value=[{"role": "assistant", "content": WELCOME_HTML}],
+        sanitize_html=False,  # allow HTML for centered welcome
+        show_copy_button=True
     )
 
     msg = gr.Textbox(
@@ -206,12 +206,14 @@ with gr.Blocks(
 
     msg.submit(chat_fn, inputs=[msg, chat], outputs=[chat, msg])
     send_btn.click(chat_fn, inputs=[msg, chat], outputs=[chat, msg])
-    clear_btn.click(lambda: [], None, chat)
-
-demo.launch(debug=True)
-
-demo.queue()
+    clear_btn.click(fn=clear_chat, inputs=None, outputs=chat)
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", "7860"))
-    demo.launch(server_name="0.0.0.0", server_port=port, show_error=True)
+    # queue BEFORE a single launch
+    demo.queue(max_size=64).launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        show_error=True,
+        share=True
+    )
